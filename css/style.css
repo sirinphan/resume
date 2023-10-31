@@ -9,3 +9,10 @@ font-family: 'Maitree', serif;
 h4{
   font-family: 'Maitree', serif;
 }
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
